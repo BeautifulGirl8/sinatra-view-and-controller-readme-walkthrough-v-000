@@ -13,7 +13,7 @@ class App < Sinatra::Base
   end
 
   get '/friends' do
-    # Write your code here!
-
+    @friends = ['Papa Smurf', 'Captain Marvel', 'Wonder Woman', 'Superman', 'Micky Mouse']
+erb :friends
   end
 end

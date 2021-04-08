@@ -7,13 +7,12 @@ class App < Sinatra::Base
 
   post '/reverse' do
     original_string = params["string"]
-  @reversed_string = original_string.reverse
-
+   @reversed_string = original_string.reverse
     erb :reversed
   end
 
   get '/friends' do
     @friends = ['Papa Smurf', 'Captain Marvel', 'Wonder Woman', 'Superman', 'Micky Mouse']
-erb :friends
+    erb :friends
   end
 end
